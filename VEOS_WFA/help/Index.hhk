@@ -1,0 +1,106 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
+<HTML>
+<HEAD>
+<meta name="GENERATOR" content="Precision Helper 2.0.1">
+<!-- Sitemap 1.0 -->
+</HEAD>
+<BODY>
+    <OBJECT type="text/site properties">
+      <param name="FrameName" value="right">
+    </OBJECT>
+    <UL>
+        <LI><OBJECT type="text/sitemap">
+          <param name="Name" value="Uvod">
+          <param name="Local" value="topics\Uvod.htm">
+        </OBJECT>
+        <LI><OBJECT type="text/sitemap">
+          <param name="Name" value="Glavni prozor aplikacije">
+          <param name="Local" value="topics\Glavni prozor aplikacije.htm">
+        </OBJECT>
+        <LI><OBJECT type="text/sitemap">
+          <param name="Name" value="Hala">
+          <param name="Local" value="topics\Hale.htm">
+        </OBJECT>
+        <LI><OBJECT type="text/sitemap">
+          <param name="Name" value="Zauzimanje terena">
+          <param name="Local" value="topics\Zauzimanje terena.htm">
+        </OBJECT>
+        <LI><OBJECT type="text/sitemap">
+          <param name="Name" value="Oslobadjanje terena">
+          <param name="Local" value="topics\Oslobadjanje terena.htm">
+        </OBJECT>
+        <LI><OBJECT type="text/sitemap">
+          <param name="Name" value="Stanja terena">
+          <param name="Local" value="topics\Stanja terena.htm">
+        </OBJECT>
+        <LI><OBJECT type="text/sitemap">
+          <param name="Name" value="Evidencija terena">
+          <param name="Local" value="topics\Evidencija terena.htm">
+        </OBJECT>
+        <LI><OBJECT type="text/sitemap">
+          <param name="Name" value="Dodavanje terena">
+          <param name="Local" value="topics\Dodavanje terena.htm">
+        </OBJECT>
+        <LI><OBJECT type="text/sitemap">
+          <param name="Name" value="Izmena terena">
+          <param name="Local" value="topics\Izmena terena.htm">
+        </OBJECT>
+        <LI><OBJECT type="text/sitemap">
+          <param name="Name" value="Brisanje terena">
+          <param name="Local" value="topics\Brisanje terena.htm">
+        </OBJECT>
+        <LI><OBJECT type="text/sitemap">
+          <param name="Name" value="Evidencija timova">
+          <param name="Local" value="topics\Evidencija timova.htm">
+        </OBJECT>
+        <LI><OBJECT type="text/sitemap">
+          <param name="Name" value="Dodavanje timova">
+          <param name="Local" value="topics\Dodavanje timova.htm">
+        </OBJECT>
+        <LI><OBJECT type="text/sitemap">
+          <param name="Name" value="Izmena timova">
+          <param name="Local" value="topics\Izmena timova.htm">
+        </OBJECT>
+        <LI><OBJECT type="text/sitemap">
+          <param name="Name" value="Brisanje timova">
+          <param name="Local" value="topics\Brisanje timova.htm">
+        </OBJECT>
+        <LI><OBJECT type="text/sitemap">
+          <param name="Name" value="Evidencija sportista">
+          <param name="Local" value="topics\Evidencija sportista.htm">
+        </OBJECT>
+        <LI><OBJECT type="text/sitemap">
+          <param name="Name" value="Dodavanje sportista">
+          <param name="Local" value="topics\Dodavanje sportista.htm">
+        </OBJECT>
+        <LI><OBJECT type="text/sitemap">
+          <param name="Name" value="Izmena sportista">
+          <param name="Local" value="topics\Izmena sportista.htm">
+        </OBJECT>
+        <LI><OBJECT type="text/sitemap">
+          <param name="Name" value="Brisanje sportista">
+          <param name="Local" value="topics\Brisanje sportista.htm">
+        </OBJECT>
+        <LI><OBJECT type="text/sitemap">
+          <param name="Name" value="Evidencija sportova">
+          <param name="Local" value="topics\Evidencija sportova.htm">
+        </OBJECT>
+        <LI><OBJECT type="text/sitemap">
+          <param name="Name" value="Dodavanje sportova">
+          <param name="Local" value="topics\Dodavanje sportova.htm">
+        </OBJECT>
+        <LI><OBJECT type="text/sitemap">
+          <param name="Name" value="Izmena sportova">
+          <param name="Local" value="topics\Izmena sportova.htm">
+        </OBJECT>
+        <LI><OBJECT type="text/sitemap">
+          <param name="Name" value="Brisanje sportova">
+          <param name="Local" value="topics\Brisanje sportova.htm">
+        </OBJECT>
+        <LI><OBJECT type="text/sitemap">
+          <param name="Name" value="Istorija zauzetosti">
+          <param name="Local" value="topics\Istorija zauzetosti.htm">
+        </OBJECT>
+    </UL>
+</BODY>
+</HTML>

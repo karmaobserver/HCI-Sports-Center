@@ -1,0 +1,605 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{B28D191B-7B8D-4895-8416-7502C5D04756}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>VEOS_WFA</RootNamespace>
+    <AssemblyName>VEOS_WFA</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="model\collection\Hale_Collection.cs" />
+    <Compile Include="model\collection\Sportiste_Collection.cs" />
+    <Compile Include="model\collection\Sportovi_Collection.cs" />
+    <Compile Include="model\collection\Tereni_Collection.cs" />
+    <Compile Include="model\collection\Timovi_Collection.cs" />
+    <Compile Include="model\collection\Zauzimanje_Collection.cs" />
+    <Compile Include="model\entity\Hala.cs" />
+    <Compile Include="model\entity\Sport.cs" />
+    <Compile Include="model\entity\Sportista.cs" />
+    <Compile Include="model\entity\Teren.cs" />
+    <Compile Include="model\entity\Tim.cs" />
+    <Compile Include="model\entity\Zauzimanje.cs" />
+    <Compile Include="model\Enumeration.cs" />
+    <Compile Include="Viewer\dialogAzuriranjePrikaz\DialogSportisti.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Viewer\dialogAzuriranjePrikaz\DialogSportisti.Designer.cs">
+      <DependentUpon>DialogSportisti.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Viewer\dialogAzuriranjePrikaz\DialogSportovi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Viewer\dialogAzuriranjePrikaz\DialogSportovi.Designer.cs">
+      <DependentUpon>DialogSportovi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Viewer\dialogAzuriranjePrikaz\DialogTereni.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Viewer\dialogAzuriranjePrikaz\DialogTereni.Designer.cs">
+      <DependentUpon>DialogTereni.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Viewer\dialogAzuriranjePrikaz\DialogTimovi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Viewer\dialogAzuriranjePrikaz\DialogTimovi.Designer.cs">
+      <DependentUpon>DialogTimovi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Viewer\dialogAzuriranjePrikaz\menuSportisti\DodavanjeSportista.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Viewer\dialogAzuriranjePrikaz\menuSportisti\DodavanjeSportista.Designer.cs">
+      <DependentUpon>DodavanjeSportista.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Viewer\dialogAzuriranjePrikaz\menuSportovi\DodavanjeSportova.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Viewer\dialogAzuriranjePrikaz\menuSportovi\DodavanjeSportova.Designer.cs">
+      <DependentUpon>DodavanjeSportova.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Viewer\dialogAzuriranjePrikaz\menuTereni\DodavanjeTerena.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Viewer\dialogAzuriranjePrikaz\menuTereni\DodavanjeTerena.Designer.cs">
+      <DependentUpon>DodavanjeTerena.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Viewer\dialogAzuriranjePrikaz\menuTimovi\DodavanjeTimova.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Viewer\dialogAzuriranjePrikaz\menuTimovi\DodavanjeTimova.Designer.cs">
+      <DependentUpon>DodavanjeTimova.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Viewer\dialogDetails\DialogSportistiDetails.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Viewer\dialogDetails\DialogSportistiDetails.Designer.cs">
+      <DependentUpon>DialogSportistiDetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Viewer\dialogDetails\DialogSportoviDetails.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Viewer\dialogDetails\DialogSportoviDetails.Designer.cs">
+      <DependentUpon>DialogSportoviDetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Viewer\dialogDetails\DialogTereniDetails.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Viewer\dialogDetails\DialogTereniDetails.Designer.cs">
+      <DependentUpon>DialogTereniDetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Viewer\dialogDetails\DialogTimoviDetails.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Viewer\dialogDetails\DialogTimoviDetails.Designer.cs">
+      <DependentUpon>DialogTimoviDetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Viewer\dialogDetails\DialogZauzimanjeTerenaDetails.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Viewer\dialogDetails\DialogZauzimanjeTerenaDetails.Designer.cs">
+      <DependentUpon>DialogZauzimanjeTerenaDetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Viewer\dialogUserControls\DialogSportisti.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Viewer\dialogUserControls\DialogSportisti.Designer.cs">
+      <DependentUpon>DialogSportisti.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Viewer\dialogUserControls\DialogSportovi.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Viewer\dialogUserControls\DialogSportovi.Designer.cs">
+      <DependentUpon>DialogSportovi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Viewer\dialogUserControls\DialogTereni.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Viewer\dialogUserControls\DialogTereni.Designer.cs">
+      <DependentUpon>DialogTereni.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Viewer\dialogUserControls\DialogTimovi.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Viewer\dialogUserControls\DialogTimovi.Designer.cs">
+      <DependentUpon>DialogTimovi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Viewer\dialogUserControls\dodavanje\Background.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Viewer\dialogUserControls\dodavanje\Background.Designer.cs">
+      <DependentUpon>Background.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Viewer\dialogUserControls\dodavanje\DodavanjeSportista.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Viewer\dialogUserControls\dodavanje\DodavanjeSportista.Designer.cs">
+      <DependentUpon>DodavanjeSportista.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Viewer\dialogUserControls\dodavanje\DodavanjeSportova.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Viewer\dialogUserControls\dodavanje\DodavanjeSportova.Designer.cs">
+      <DependentUpon>DodavanjeSportova.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Viewer\dialogUserControls\dodavanje\DodavanjeTerena.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Viewer\dialogUserControls\dodavanje\DodavanjeTerena.Designer.cs">
+      <DependentUpon>DodavanjeTerena.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Viewer\dialogUserControls\dodavanje\DodavanjeTimova.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Viewer\dialogUserControls\dodavanje\DodavanjeTimova.Designer.cs">
+      <DependentUpon>DodavanjeTimova.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Viewer\dialogUserControls\ZauzimanjeTerena.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Viewer\dialogUserControls\ZauzimanjeTerena.Designer.cs">
+      <DependentUpon>ZauzimanjeTerena.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Viewer\DialogZauzimanjaTerena.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Viewer\DialogZauzimanjaTerena.Designer.cs">
+      <DependentUpon>DialogZauzimanjaTerena.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Viewer\messageBoxes\DeleteWarning.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Viewer\messageBoxes\DeleteWarning.Designer.cs">
+      <DependentUpon>DeleteWarning.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Viewer\messageBoxes\MaxTerenWarning.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Viewer\messageBoxes\MaxTerenWarning.Designer.cs">
+      <DependentUpon>MaxTerenWarning.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Viewer\panelBrowse\Hale.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Viewer\panelBrowse\Hale.Designer.cs">
+      <DependentUpon>Hale.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Viewer\panelDetails\HaleDetails.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Viewer\panelDetails\HaleDetails.Designer.cs">
+      <DependentUpon>HaleDetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Viewer\panelDetails\SportistiDetails.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Viewer\panelDetails\SportistiDetails.Designer.cs">
+      <DependentUpon>SportistiDetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Viewer\panelBrowse\Tereni.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Viewer\panelBrowse\Tereni.Designer.cs">
+      <DependentUpon>Tereni.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Viewer\panelDetails\TereniDetails.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Viewer\panelDetails\TereniDetails.Designer.cs">
+      <DependentUpon>TereniDetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Viewer\panelBrowse\Timovi.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Viewer\panelBrowse\Timovi.Designer.cs">
+      <DependentUpon>Timovi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Viewer\panelBrowse\Sportisti.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Viewer\panelBrowse\Sportisti.Designer.cs">
+      <DependentUpon>Sportisti.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Viewer\panelDetails\TimoviDetails.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Viewer\panelDetails\TimoviDetails.Designer.cs">
+      <DependentUpon>TimoviDetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Viewer\TimMembers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Viewer\TimMembers.Designer.cs">
+      <DependentUpon>TimMembers.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Viewer\dialogAzuriranjePrikaz\DialogSportisti.resx">
+      <DependentUpon>DialogSportisti.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Viewer\dialogAzuriranjePrikaz\DialogSportovi.resx">
+      <DependentUpon>DialogSportovi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Viewer\dialogAzuriranjePrikaz\DialogTereni.resx">
+      <DependentUpon>DialogTereni.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Viewer\dialogAzuriranjePrikaz\DialogTimovi.resx">
+      <DependentUpon>DialogTimovi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Viewer\dialogAzuriranjePrikaz\menuSportisti\DodavanjeSportista.resx">
+      <DependentUpon>DodavanjeSportista.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Viewer\dialogAzuriranjePrikaz\menuSportovi\DodavanjeSportova.resx">
+      <DependentUpon>DodavanjeSportova.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Viewer\dialogAzuriranjePrikaz\menuTereni\DodavanjeTerena.resx">
+      <DependentUpon>DodavanjeTerena.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Viewer\dialogAzuriranjePrikaz\menuTimovi\DodavanjeTimova.resx">
+      <DependentUpon>DodavanjeTimova.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Viewer\dialogDetails\DialogSportistiDetails.resx">
+      <DependentUpon>DialogSportistiDetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Viewer\dialogDetails\DialogSportoviDetails.resx">
+      <DependentUpon>DialogSportoviDetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Viewer\dialogDetails\DialogTereniDetails.resx">
+      <DependentUpon>DialogTereniDetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Viewer\dialogDetails\DialogTimoviDetails.resx">
+      <DependentUpon>DialogTimoviDetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Viewer\dialogDetails\DialogZauzimanjeTerenaDetails.resx">
+      <DependentUpon>DialogZauzimanjeTerenaDetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Viewer\dialogUserControls\DialogSportisti.resx">
+      <DependentUpon>DialogSportisti.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Viewer\dialogUserControls\DialogSportovi.resx">
+      <DependentUpon>DialogSportovi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Viewer\dialogUserControls\DialogTereni.resx">
+      <DependentUpon>DialogTereni.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Viewer\dialogUserControls\DialogTimovi.resx">
+      <DependentUpon>DialogTimovi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Viewer\dialogUserControls\dodavanje\Background.resx">
+      <DependentUpon>Background.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Viewer\dialogUserControls\dodavanje\DodavanjeSportista.resx">
+      <DependentUpon>DodavanjeSportista.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Viewer\dialogUserControls\dodavanje\DodavanjeSportova.resx">
+      <DependentUpon>DodavanjeSportova.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Viewer\dialogUserControls\dodavanje\DodavanjeTerena.resx">
+      <DependentUpon>DodavanjeTerena.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Viewer\dialogUserControls\dodavanje\DodavanjeTimova.resx">
+      <DependentUpon>DodavanjeTimova.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Viewer\dialogUserControls\ZauzimanjeTerena.resx">
+      <DependentUpon>ZauzimanjeTerena.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Viewer\DialogZauzimanjaTerena.resx">
+      <DependentUpon>DialogZauzimanjaTerena.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Viewer\messageBoxes\DeleteWarning.resx">
+      <DependentUpon>DeleteWarning.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Viewer\messageBoxes\MaxTerenWarning.resx">
+      <DependentUpon>MaxTerenWarning.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Viewer\panelBrowse\Hale.resx">
+      <DependentUpon>Hale.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Viewer\panelDetails\HaleDetails.resx">
+      <DependentUpon>HaleDetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Viewer\panelBrowse\Sportisti.resx">
+      <DependentUpon>Sportisti.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Viewer\panelDetails\SportistiDetails.resx">
+      <DependentUpon>SportistiDetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Viewer\panelBrowse\Tereni.resx">
+      <DependentUpon>Tereni.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Viewer\panelDetails\TereniDetails.resx">
+      <DependentUpon>TereniDetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Viewer\panelBrowse\Timovi.resx">
+      <DependentUpon>Timovi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Viewer\panelDetails\TimoviDetails.resx">
+      <DependentUpon>TimoviDetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Viewer\TimMembers.resx">
+      <DependentUpon>TimMembers.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\background.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hala.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hala_button.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\home_screen.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\home_screen1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\home_screen2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\home_screen_2_png.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\home_screen_2_jpg.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\home_screen_panel_2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\button_click.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\home_screen.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\panelHale.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\panelTeren_zatvoren.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\panelHale_click.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\panelHale_hover.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\panelTeren_zatvoren_hover.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\button_hover_dialog.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\background.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\releaseTeren.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\releaseTeren_hover.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\panelTeren.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\panelTeren_locked.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\panelTeren_hover.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\panelTeren_hover_locked.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\teren.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sport.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tim.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hale.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\button.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\button_hover.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\questionMessageBox.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\padlock_locked.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\padlock_unlocked.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\panelSlobodan.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\panelZauzet.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tereni_40x32.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\help_browser.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\help_browser2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gohome %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\help.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\history.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sportisti.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dodavanje.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\edit32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\brisanje.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\potvrda.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\odustanak.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\terenGlav.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\terenGlav2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tim2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sport2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\potvrda2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cancel2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\odustanak2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\odustanak21.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\search.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\table_refresh.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ikona.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\start.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\messageBox.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,93 @@
+Microsoft HTML Help Compiler 4.74.8702
+
+Compiling c:\Users\Makso\Desktop\HCI\Projekat\VEOS_WFA_v8.3\VEOS_WFA\help\help.chm
+
+Contents.hhc
+Index.hhk
+topics\Uvod.htm
+topics\Glavni prozor aplikacije.htm
+topics\Hale.htm
+topics\Zauzimanje terena.htm
+topics\Oslobadjanje terena.htm
+topics\Stanja terena.htm
+topics\Evidencija terena.htm
+topics\Dodavanje terena.htm
+topics\Izmena terena.htm
+topics\Brisanje terena.htm
+topics\Evidencija timova.htm
+topics\Dodavanje timova.htm
+topics\Izmena timova.htm
+topics\Brisanje timova.htm
+topics\Evidencija sportista.htm
+topics\Dodavanje sportista.htm
+topics\Izmena sportista.htm
+topics\Brisanje sportista.htm
+topics\Evidencija sportova.htm
+topics\Dodavanje sportova.htm
+topics\Izmena sportova.htm
+topics\Brisanje sportova.htm
+topics\Istorija zauzetosti.htm
+img\logo.png
+img\GlavniProzor.png
+img\Hala.png
+img\SelektovanTim.png
+img\PrevlacenjeTima2.png
+img\DijalogZauzimanja.png
+img\PosleZauzimanja.png
+img\Ned.png
+img\Oslobadjanje.png
+img\DijalogOslobadjanja.png
+img\NakonOslobadjanja.png
+img\Slobodan.png
+img\Zauzet.png
+img\Zatvoren.png
+img\EvidencijaTerena.png
+img\DodavanjeTerena.png
+img\DodavanjeTerenaForma.png
+img\KlikIzmena.png
+img\IzmenaTerenaForma.png
+img\IzmenaTerenaPosle.png
+img\BrisanjeTerena.png
+img\DijalogBrisanjaTerena.png
+img\ObrisanTeren.png
+img\EvidencijaTimova.png
+img\DodavanjeTimova.png
+img\DijalogDodavanja.png
+img\IzmenaTimova.png
+img\DijalogIzmenaTimova.png
+img\IzmenaTimovaPosle.png
+img\BrisanjeTimova.png
+img\DijalogBrisanjaTimova.png
+img\ObrisanTim.png
+img\EvidencijaSportista.png
+img\DodavanjeSportista.png
+img\DijalogDodavanjaSportista.png
+img\DodavanjeSlike.png
+img\PutanjaSlike.png
+img\IzmenaSportista.png
+img\DijalogIzmenaSportista.png
+img\IzmenaSportistaPosle.png
+img\BrisanjeSportista.png
+img\DijalogBrisanjaSportista.png
+img\ObrisanSportista.png
+img\EvidencijaSportova.png
+img\DodavanjeSportova.png
+img\DijalogDodavanjaSportova.png
+img\IzmenaSportova.png
+img\DijalogIzmenaSportova.png
+img\IzmenaSportovaPosle.png
+img\BrisanjeSportova.png
+img\DijalogBrisanjaSportova.png
+img\ObrisanSport.png
+img\IstorijaZauzetosti.png
+css\styles_standard.css
+
+Compile time: 0 minutes, 4 seconds
+25	Topics
+225	Local links
+0	Internet links
+53	Graphics
+
+
+Created c:\Users\Makso\Desktop\HCI\Projekat\VEOS_WFA_v8.3\VEOS_WFA\help\help.chm, 4,643,135 bytes
+Compression decreased file by 2,542,180 bytes.
